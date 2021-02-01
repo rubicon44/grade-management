@@ -18,8 +18,8 @@ ENV APP_ROOT /grade-management
 WORKDIR $APP_ROOT
 COPY Gemfile $APP_ROOT/Gemfile
 COPY Gemfile.lock $APP_ROOT/Gemfile.lock
-COPY package.json $APP_ROOT/package.json
-COPY yarn.lock $APP_ROOT/yarn.lock
+# COPY package.json $APP_ROOT/package.json
+# COPY yarn.lock $APP_ROOT/yarn.lock
 RUN bundle install
 COPY . $APP_ROOT
 
