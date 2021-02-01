@@ -1,24 +1,31 @@
-# README
+# 概要
+grade-managementは高等学校の成績管理サービスです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+【サービスの目的】
 
-Things you may want to cover:
+- 生徒の成績を見える化し管理しやすくする
+- 紙の成績表による煩わしさを解消する
 
-* Ruby version
+高校生の当時、成績表は紙で渡されていましたが、汚れたり無くしてしまったり先生が預かったままだったりと、自分で振り返りを行うのに苦労しました。
 
-* System dependencies
+また大学生時代は、紙の成績表が郵送されてきました。
 
-* Configuration
+grade-managementを開発することによって、あの頃抱いた煩わしさを解決したいと思いました。
 
-* Database creation
+## URL
+サービスURL：準備中
 
-* Database initialization
+## アピールポイント
+準備中
 
-* How to run the test suite
+## 使用技術
+準備中
 
-* Services (job queues, cache servers, search engines, etc.)
+## DB設計図（Cacoo使用）
+![スクリーンショット 2021-02-02 5 14 23](https://user-images.githubusercontent.com/47108632/106512917-939a1780-6515-11eb-9b5f-cf1ddfe8276b.png)
 
-* Deployment instructions
+## AWS構成図（Cacoo使用）
+準備中
 
-* ...
+## 機能一覧
+準備中
