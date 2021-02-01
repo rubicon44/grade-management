@@ -15,22 +15,29 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
 
-# Ignore uploaded files in development
+# Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
 
 /node_modules
 /yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 
+/public
 /public/assets
+/public/packs
+/public/packs-test
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/credentials.yml.enc
 .env
-/public
 
 # Ignore local db data.
 db_data
