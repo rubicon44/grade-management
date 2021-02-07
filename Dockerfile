@@ -1,6 +1,17 @@
-FROM ruby:2.7.2-alpine
+FROM ruby:2.7.2-alpine3.12
 
 ENV CHROME_PACKAGES="chromium-chromedriver zlib-dev chromium xvfb wait4ports xorg-server dbus ttf-freefont mesa-dri-swrast udev"
+
+# RUN apk update && \
+#     apk upgrade && \
+#     apk add --no-cache --virtual=.build-deps \
+#     build-base \
+#     mariadb-dev \
+#     nodejs \
+#     tzdata \
+#     yarn
+
+# apk add --update --no-cache --virtual=.build-deps \
 
 RUN apk update && \
     apk upgrade && \
