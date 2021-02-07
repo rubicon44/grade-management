@@ -37,7 +37,7 @@ grade-managementを開発することによって、あの頃抱いた煩わし�
 - Docker Compose
 
 ## DB設計図（Cacoo使用）
-![ER図 grade-management（成績管理サービス）-1](https://user-images.githubusercontent.com/47108632/106648341-82afdb80-65d3-11eb-869a-ea95ffabbfa5.png)
+![ER図 grade-management（成績管理サービス）-1](https://user-images.githubusercontent.com/47108632/107152161-b27f2a80-69a9-11eb-9df8-3b5de7d1e0ff.png)
 
 ## AWS構成図（Cacoo使用）
 準備中
