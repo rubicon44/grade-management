@@ -1,0 +1,18 @@
+<header class="header">
+  <h1 class="header-logo">
+    <%= link_to website_name, root_path %>
+  </h1>
+  <nav class="nav-cover">
+    <ul class="nav">
+      <li class="nav-item">
+        <%= link_to "管理者はこちら", new_admin_session_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "先生はこちら", new_teacher_session_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "生徒はこちら", new_student_session_path %>
+      </li>
+    </ul>
+  </nav>
+</header>
