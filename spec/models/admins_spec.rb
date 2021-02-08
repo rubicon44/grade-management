@@ -5,13 +5,15 @@ RSpec.describe Admin, type: :model do
     # テストデータ作成
   end
 
-  it '有効なファクトリを持つこと' do
-  end
-
-  it 'ユーザーネーム、メールアドレス、パスワードがあれば有効な状態であること' do
+  describe 'ファクトリの検証' do
+    it '有効なファクトリを持つこと' do
+    end
   end
 
   describe '存在性の検証' do
+    it 'ユーザーネーム、メールアドレス、パスワードがあれば有効な状態であること' do
+    end
+
     it 'ユーザーネームがなければ無効な状態であること' do
     end
 
