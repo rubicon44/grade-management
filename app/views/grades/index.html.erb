@@ -1,0 +1,15 @@
+<h1>学年一覧</h1>
+
+<% if admin_signed_in? %>
+  <%= link_to new_grade_path do %>
+    <div>学年作成</div>
+  <% end %>
+<% end %>
+
+<% @grades.each do |grade| %>
+  <div>
+    <div>
+      <%= link_to "#{grade.grade_number}学年", group_path(grade) %>
+    </div>
+  </div>
+<% end %>

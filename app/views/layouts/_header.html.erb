@@ -4,15 +4,26 @@
   </h1>
   <nav class="nav-cover">
     <ul class="nav">
-      <li class="nav-item">
-        <%= link_to "管理者はこちら", new_admin_session_path %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "先生はこちら", new_teacher_session_path %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "生徒はこちら", new_student_session_path %>
-      </li>
+      <% if admin_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "学年一覧", grades_path %>
+        </li>
+        <li class="nav-item">
+          <%= button_to "ログアウト", destroy_admin_session_path, method: :delete %>
+        </li>
+      <% elsif teacher_signed_in? %>
+      <% elsif student_signed_in? %>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "管理者はこちら", new_admin_session_path %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "先生はこちら", new_teacher_session_path %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "生徒はこちら", new_student_session_path %>
+        </li>
+      <% end %>
     </ul>
   </nav>
 </header>

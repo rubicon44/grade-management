@@ -48,7 +48,9 @@ RSpec.describe Grade, type: :model do
   end
 
   describe 'メソッドの検証' do
-    describe '〜メソッッド' do
+    describe '' do
+      it '' do
+      end
     end
   end
 end
