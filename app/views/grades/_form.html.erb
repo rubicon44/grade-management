@@ -1,0 +1,10 @@
+<%= form_with(model: Grade.new, local: true) do |form| %>
+  <div>
+    <%= form.hidden_field :grade_number %>
+    <%= form.text_field :grade_number, placeholder: "学年番号" %>
+  </div>
+
+  <div>
+    <%= form.submit "登録" %>
+  </div>
+<% end %>

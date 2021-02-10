@@ -35,6 +35,7 @@ RSpec.describe Group, type: :model do
   end
 
   describe '一意性の検証' do
+    # todo: 学年が違えば重複しても大丈夫にする。
     it '重複したクラス番号なら無効な状態であること' do
       group = FactoryBot.create(:group, group_number: '1')
       duplicate_group = FactoryBot.build(:group, group_number: '1')

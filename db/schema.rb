@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_10_160811) do
+ActiveRecord::Schema.define(version: 2021_02_10_214340) do
 
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "username", default: "", null: false
@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 2021_02_10_160811) do
     t.string "group_number", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["group_number"], name: "index_groups_on_group_number", unique: true
   end
 
   create_table "students", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|

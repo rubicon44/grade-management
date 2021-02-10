@@ -3,6 +3,5 @@ class Group < ApplicationRecord
 
   validates :grade_id, presence: true
   VALID_GROUP_NUMBER_REGEX = /[0-9]+/.freeze
-  validates :group_number, presence: true, uniqueness: { case_sensitive: true },
-                           length: { in: 1..20 }, format: { with: VALID_GROUP_NUMBER_REGEX }
+  validates :group_number, presence: true, length: { in: 1..20 }, format: { with: VALID_GROUP_NUMBER_REGEX }
 end

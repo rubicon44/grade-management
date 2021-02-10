@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   }
 
   root 'static_pages#home'
-  resources :grade
-  resources :group
+  resources :grades
+  resources :groups
 end

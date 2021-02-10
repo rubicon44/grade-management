@@ -1,0 +1,14 @@
+<%= form_with(model: Group.new, local: true) do |form| %>
+  <div>
+    <%= form.hidden_field :grade_id, { value: @grade.id } %>
+  </div>
+
+  <div>
+    <%= form.hidden_field :group_number %>
+    <%= form.text_field :group_number, placeholder: "クラス番号" %>
+  </div>
+
+  <div>
+    <%= form.submit "登録" %>
+  </div>
+<% end %>

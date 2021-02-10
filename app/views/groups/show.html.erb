@@ -1,0 +1,17 @@
+<h2>
+  <%= @grade.grade_number %>学年
+</h2>
+
+<% if admin_signed_in? %>
+  <%= link_to new_group_path(grade_id: @grade.id) do %>
+    <div>クラス作成</div>
+  <% end %>
+<% end %>
+
+<% @groups.each do |group| %>
+  <div>
+    <div>
+      <%= link_to "#{group.group_number}クラス" %>
+    </div>
+  </div>
+<% end %>
