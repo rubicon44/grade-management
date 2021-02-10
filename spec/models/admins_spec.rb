@@ -107,7 +107,7 @@ RSpec.describe Admin, type: :model do
   end
 
   describe 'メソッドの検証' do
-    describe '〜メソッッド' do
+    describe '' do
     end
   end
 end
